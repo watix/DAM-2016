@@ -16,6 +16,10 @@
 	height: 720px;
 }
 
+#SceneScene1 .chart li.selected .skill {
+	color: #FFF;
+}
+
 #SceneScene1 .chart li {
   display: inline-block;
   padding: 0;
@@ -60,7 +64,7 @@
   bottom: 20px;
   position: absolute;
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 1.8rem;
 }
 #SceneScene1 .chart .pp {
 	height: 95%;

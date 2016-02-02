@@ -37,14 +37,24 @@ SceneScene1.prototype.handleKeyDown = function (keyCode) {
 	// TODO : write an key event handler when this scene get focued
 	switch (keyCode) {
 		case sf.key.LEFT:
+		var currentSelect = $('ul > .selected');
+		if (currentSelect.prev().length == 0) { $('ul > li:last').addClass('selected');}
+		else { currentSelect.prev().addClass('selected'); }
+		currentSelect.removeClass('selected');
 			break;
 		case sf.key.RIGHT:
+			var currentSelect = $('ul > .selected');
+			if (currentSelect.next().length == 0) { $('ul > li:first').addClass('selected');}
+			else { currentSelect.next().addClass('selected'); }
+			currentSelect.removeClass('selected');
 			break;
 		case sf.key.UP:
 			break;
 		case sf.key.DOWN:
 			break;
 		case sf.key.ENTER:
+			break;
+		case sf.key.TOOLS:
 			break;
 		default:
 			alert("handle default key event, key code(" + keyCode + ")");
