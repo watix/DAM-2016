@@ -1,4 +1,4 @@
-
+var API = "http://api.quehacenlosdiputados.net";
 function onStart () {
 	// TODO : Add your Initilize code here
 	// NOTE : In order to start your app, call "sf.start()" at the end of this function!!
