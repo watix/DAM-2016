@@ -2,7 +2,8 @@
  "files": [],
  "scenes": [
   "Scene1",
-  "Scene2"
+  "Scene2",
+  "Scene0"
  ],
  "theme": "base",
  "modules": ["ime"]

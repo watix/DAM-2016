@@ -1,0 +1,26 @@
+#SceneScene0 {
+	position : absolute;
+	left : 0px;
+	top : 0px;
+	width : 1280px;
+	height : 720px;
+	background-color : #ffffff;
+	background-image : url('');
+	text-align: center;
+}
+
+#SceneScene0 h1 {
+  font-size:60px;
+  margin-top:30px;
+}
+
+#SceneScene0 ul {
+  list-style: none;
+  margin-top: 10%;
+  font-size:40px;
+
+}
+
+#SceneScene0 ul li.selected{
+  color: red;
+}
