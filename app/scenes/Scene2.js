@@ -18,8 +18,7 @@ SceneScene2.prototype.initialize = function () {
 		url: API+"/votaciones",
 		success: function(data){
 				alert('success');
-				$("#titulo").html(data.result[0].xml.resultado.informacion.textoexpediente);
-				$("#subtitulo").html(data.result[0].xml.resultado.informacion.titulosubgrupo);
+				$("#titulo").html(data.result[0].xml.resultado.informacion.textoexpediente+' '+data.result[0].xml.resultado.informacion.titulosubgrupo);
 				$(".chart").append('<li class="bar afavor" style="height:'+((100*data.result[0].xml.resultado.totales.afavor)/data.result[0].xml.resultado.totales.presentes)*1.2+'%">\
 															<div class="percent">'+data.result[0].xml.resultado.totales.afavor+'</div>\
 															<div class="skill">A favor</div>\

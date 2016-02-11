@@ -4,20 +4,45 @@
 	top : 0px;
 	width : 1280px;
 	height : 720px;
-	background-color : #ffffff;
-	background-image : url('');
+	background-color : #000;
 	font-family: 'Open Sans', sans-serif;
+}
+
+#SceneScene2:after {
+	content: '';
+	position : absolute;
+	left : 0px;
+	top : 0px;
+	width : 1280px;
+	height : 720px;
+	background-image : url('../images/votacion.jpg');
+	background-size: cover;
+  opacity: 0.25;
+}
+
+#SceneScene2 h1 {
+	font-family: 'Roboto Slab', sans-serif;
+	text-transform:uppercase;
+	font-weight: bold;
+	text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
+	color: #FFF;
+	margin: 0 auto;
+	width: 90%;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 #SceneScene2 .chart {
   clear: both;
   padding: 15px;
-  width: 1280px;
+  width: 980px;
 	height: 720px;
+	margin: 0 auto;
+	margin-left: 350px;
 }
 
 #SceneScene2 .chart li.selected .skill {
-	color: red;
+	color: #d45858;
 }
 
 #SceneScene2 .chart li {
@@ -43,7 +68,7 @@
 
 #SceneScene2 .chart .percent {
   letter-spacing: -3px;
-  opacity: .4;
+  opacity: 1;
   width: 100%;
   position: absolute;
   font-size: 62px;
@@ -57,7 +82,7 @@
 
 #SceneScene2 .chart .skill {
   font-weight: 800;
-  opacity: .5;
+  opacity: 1;
   overflow: hidden;
   text-transform: uppercase;
   width: 100%;
@@ -65,6 +90,7 @@
   position: absolute;
   font-size: 16px;
   font-size: 1.8rem;
+	color: #FFF;
 }
 
 #SceneScene2 .chart .afavor {
