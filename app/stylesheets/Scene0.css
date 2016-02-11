@@ -4,23 +4,44 @@
 	top : 0px;
 	width : 1280px;
 	height : 720px;
-	background-color : #ffffff;
-	background-image : url('');
+	background-color : #000;
 	text-align: center;
+	font-family: 'Roboto Slab', sans-serif;
+	color: #FFF;
+}
+#SceneScene0:after {
+	content: '';
+	position : absolute;
+	left : 0px;
+	top : 0px;
+	width : 1280px;
+	height : 720px;
+	background-image : url('../images/congreso.jpg');
+	background-size: cover;
+  opacity: 0.25;
 }
 
 #SceneScene0 h1 {
   font-size:60px;
-  margin-top:30px;
+  margin-top:150px;
+  text-transform:uppercase;
+	font-weight: bold;
+	text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
 }
 
 #SceneScene0 ul {
   list-style: none;
+	margin: 0 auto;
   margin-top: 10%;
+	width: 600px;
   font-size:40px;
 
 }
 
+#SceneScene0 ul li:first-child {
+	border-bottom: 1px solid #FFF;
+}
+
 #SceneScene0 ul li.selected{
-  color: red;
+  color: #d45858;
 }
