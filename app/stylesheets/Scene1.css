@@ -4,9 +4,20 @@
 	top : 0px;
 	width : 1280px;
 	height : 720px;
-	background-color : #ffffff;
+	background-color : #000;
 	background-image : url('');
 	font-family: 'Open Sans', sans-serif;
+}
+#SceneScene1:after {
+	content: '';
+	position : absolute;
+	left : 0px;
+	top : 0px;
+	width : 1280px;
+	height : 720px;
+	background-image : url('../images/diputados.jpg');
+	background-size: cover;
+  opacity: 0.25;
 }
 
 #SceneScene1 .chart {
@@ -17,7 +28,7 @@
 }
 
 #SceneScene1 .chart li.selected .skill {
-	color: red;
+	color: #d45858;
 }
 
 #SceneScene1 .chart li {
@@ -43,7 +54,7 @@
 
 #SceneScene1 .chart .percent {
   letter-spacing: -3px;
-  opacity: .4;
+  opacity: 1;
   width: 100%;
   position: absolute;
   font-size: 62px;
@@ -57,13 +68,14 @@
 
 #SceneScene1 .chart .skill {
   font-weight: 800;
-  opacity: .5;
+  opacity: 1;
   overflow: hidden;
   text-transform: uppercase;
   width: 100%;
   bottom: -60px;
   position: absolute;
   font-size: 16px;
+	color: #FFF;
   font-size: 1.8rem;
 }
 #SceneScene1 .chart .Popular {
