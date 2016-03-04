@@ -3,14 +3,79 @@ alert('SceneSceneAF.js loaded');
 function SceneSceneAF() {
 
 };
-
-SceneSceneAF.prototype.initialize = function () {
+SceneSceneAF.prototype.initialize = function() {
 	alert("SceneSceneAF.initialize()");
-	// this function will be called only once when the scene manager show this scene first time
-	// initialize the scene controls and styles, and initialize your variables here
+	// this function will be called only once when the scene manager show this
+	// scene first time
+	// initialize the scene controls and styles, and initialize your variables
+	// here
 	// scene HTML and CSS will be loaded before this function is called
 
+	$.ajax({
+	type : "GET",
+	crossDomain : true,
+	async : true,
+	dataType : "json",
+	url : API + "/votaciones",
+	success : function(data) {
+					alert('success');
+					$("#titulo")
+							.html(
+									data.result[0].xml.resultado.informacion.textoexpediente
+											+ ' '
+											+ data.result[0].xml.resultado.informacion.titulosubgrupo);
+					$(".chart")
+							.append(
+									'<li data-id="1" class="bar afavor" style="height:'
+											+ ((100 * data.result[0].xml.resultado.totales.afavor) / data.result[0].xml.resultado.totales.presentes)
+											* 1.2
+											+ '%">\
+															<div class="percent">'
+											+ data.result[0].xml.resultado.totales.afavor
+											+ '</div>\
+															<div class="skill">A favor</div>\
+														</li>');
+					$(".chart")
+							.append(
+									'<li data-id="2" class="bar encontra" style="height:'
+											+ ((100 * data.result[0].xml.resultado.totales.encontra) / data.result[0].xml.resultado.totales.presentes)
+											* 1.2
+											+ '%">\
+															<div class="percent">'
+											+ data.result[0].xml.resultado.totales.encontra
+											+ '</div>\
+															<div class="skill">En contra</div>\
+														</li>');
+					$(".chart")
+							.append(
+									'<li data-id="3" class="bar abstenciones" style="height:'
+											+ ((100 * data.result[0].xml.resultado.totales.abstenciones) / data.result[0].xml.resultado.totales.presentes)
+											* 1.2
+											+ '%">\
+															<div class="percent">'
+											+ data.result[0].xml.resultado.totales.abstenciones
+											+ '</div>\
+															<div class="skill">Abstenciones</div>\
+														</li>');
+					$(".chart")
+							.append(
+									'<li data-id="4" class="bar novotan" style="height:'
+											+ ((100 * data.result[0].xml.resultado.totales.novotan) / data.result[0].xml.resultado.totales.presentes)
+											* 1.2
+											+ '%">\
+															<div class="percent">'
+											+ data.result[0].xml.resultado.totales.novotan
+											+ '</div>\
+															<div class="skill">No votan</div>\
+														</li>');
+				},
+				error : function() {
+					alert('error');
+				}
+			});
+
 };
+
 
 SceneSceneAF.prototype.handleShow = function (data) {
 	alert("SceneSceneAF.handleShow()");

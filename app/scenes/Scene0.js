@@ -73,13 +73,8 @@ SceneScene0.prototype.handleKeyDown = function(keyCode) {
 				sf.scene.hide('Scene0');
 				sf.scene.show('Scene2');
 				sf.scene.focus('Scene2');
-			} else {
-				if (scene_id == "3") {
-					sf.scene.hide('Scene0');
-					sf.scene.show('Scene3');
-					sf.scene.focus('Scene3');
-				}
-			}
+			} 
+			
 		}
 
 		break;

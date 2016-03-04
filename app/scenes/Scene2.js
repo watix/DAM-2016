@@ -12,14 +12,13 @@ SceneScene2.prototype.initialize = function() {
 	// here
 	// scene HTML and CSS will be loaded before this function is called
 
-	$
-			.ajax({
-				type : "GET",
-				crossDomain : true,
-				async : true,
-				dataType : "json",
-				url : API + "/votaciones",
-				success : function(data) {
+	$.ajax({
+	type : "GET",
+	crossDomain : true,
+	async : true,
+	dataType : "json",
+	url : API + "/votaciones",
+	success : function(data) {
 					alert('success');
 					$("#titulo")
 							.html(
