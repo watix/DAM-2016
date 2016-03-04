@@ -3,7 +3,11 @@
   "Scene1",
   "Scene2",
   "Scene0",
-  "Scene3"
+  "Scene3",
+  "SceneAF",
+  "SceneEC",
+  "SceneNV",
+  "SceneAB"
  ],
  "files": [],
  "theme": "base",
