@@ -19,12 +19,12 @@ SceneSceneAF.prototype.initialize = function() {
 	url : API + "/votaciones",
 	success : function(data) {
 					alert('success');
-					$("#titulo")
+					$("#tituloAF")
 							.html(
 									data.result[0].xml.resultado.informacion.textoexpediente
 											+ ' '
 											+ data.result[0].xml.resultado.informacion.titulosubgrupo);
-					$(".chart")
+					$(".chartAF")
 							.append(
 									'<li data-id="1" class="bar afavor" style="height:'
 											+ ((100 * data.result[0].xml.resultado.totales.afavor) / data.result[0].xml.resultado.totales.presentes)
@@ -35,7 +35,7 @@ SceneSceneAF.prototype.initialize = function() {
 											+ '</div>\
 															<div class="skill">A favor</div>\
 														</li>');
-					$(".chart")
+					$(".chartAF")
 							.append(
 									'<li data-id="2" class="bar encontra" style="height:'
 											+ ((100 * data.result[0].xml.resultado.totales.encontra) / data.result[0].xml.resultado.totales.presentes)
@@ -46,7 +46,7 @@ SceneSceneAF.prototype.initialize = function() {
 											+ '</div>\
 															<div class="skill">En contra</div>\
 														</li>');
-					$(".chart")
+					$(".chartAF")
 							.append(
 									'<li data-id="3" class="bar abstenciones" style="height:'
 											+ ((100 * data.result[0].xml.resultado.totales.abstenciones) / data.result[0].xml.resultado.totales.presentes)
@@ -57,7 +57,7 @@ SceneSceneAF.prototype.initialize = function() {
 											+ '</div>\
 															<div class="skill">Abstenciones</div>\
 														</li>');
-					$(".chart")
+					$(".chartAF")
 							.append(
 									'<li data-id="4" class="bar novotan" style="height:'
 											+ ((100 * data.result[0].xml.resultado.totales.novotan) / data.result[0].xml.resultado.totales.presentes)

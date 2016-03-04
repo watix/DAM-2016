@@ -32,7 +32,7 @@
 	padding-bottom: 40px;
 }
 
-#SceneSceneAF .chart {
+#SceneSceneAF .chartAF {
   clear: both;
   padding: 15px;
   width: 980px;
@@ -41,11 +41,11 @@
 	margin-left: 350px;
 }
 
-#SceneSceneAF .chart li.selected .skill {
+#SceneSceneAF .chartAF li.selected .skill {
 	color: #d45858;
 }
 
-#SceneSceneAF .chart li {
+#SceneSceneAF .chartAF li {
   display: inline-block;
   padding: 0;
   margin: 5px;
@@ -61,12 +61,12 @@
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
 }
 
-#SceneSceneAF .chart .label {
+#SceneSceneAF .chartAF .label {
   background: #cccccc;
   margin: -9px 0 71px 0;
 }
 
-#SceneSceneAF .chart .percent {
+#SceneSceneAF .chartAF .percent {
   letter-spacing: -3px;
   opacity: 1;
   width: 100%;
@@ -75,12 +75,12 @@
   font-size: 3.875rem;
 }
 
-#SceneSceneAF .chart .percent span {
+#SceneSceneAF .chartAF .percent span {
   font-size: 30px;
   font-size: 1rem;
 }
 
-#SceneSceneAF .chart .skill {
+#SceneSceneAF .chartAF .skill {
   font-weight: 800;
   opacity: 1;
   overflow: hidden;
@@ -93,7 +93,7 @@
 	color: #FFF;
 }
 
-#SceneSceneAF .chart .afavor {
+#SceneSceneAF .chartAF .afavor {
 	height: 95%;
   background: #4e79cd;
   border: 1px solid #4e79cd;
@@ -104,7 +104,7 @@
   background-image: linear-gradient(#75aed7, #4e79cd 70%);
 }
 
-#SceneSceneAF .chart .encontra {
+#SceneSceneAF .chartAF .encontra {
 	height: 90%;
   background: #ff6b6b;
   border: 1px solid #ff6b6b;
@@ -115,7 +115,7 @@
   background-image: linear-gradient(#ff9e9e, #ff6b6b 70%);
 }
 
-#SceneSceneAF .chart .abstenciones {
+#SceneSceneAF .chartAF .abstenciones {
 	height: 40%;
   background: #a1a29f;
   border: 1px solid #a1a29f;
@@ -126,7 +126,7 @@
   background-image: linear-gradient(#e9e9e8, #a1a29f 70%);
 }
 
-#SceneSceneAF .chart .novotan {
+#SceneSceneAF .chartAF .novotan {
 	height: 75%;
   background: #ffcd92;
   border: 1px solid #ffcd92;
